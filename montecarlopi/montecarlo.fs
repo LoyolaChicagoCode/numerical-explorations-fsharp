@@ -10,6 +10,7 @@ let MonteCarloPi(n : int64) : double =
 
     let darts = seq { for i in 1L .. n -> (generator.NextDouble(), generator.NextDouble()) } 
 
+    // TODO: explore Seq.count with predicate; Seq.countBy in F# not quite the Scala equivalent
     let dartsInCircle = darts |> Seq.filter incircle |> Seq.length
     4.0 * double(dartsInCircle) / double(n)
 
