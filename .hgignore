@@ -1,0 +1,16 @@
+syntax: glob
+
+Thumbs.db
+.DS_Store
+obj/
+build/
+*.pyc
+*.exe
+*.exe
+*.mdb
+*.pdb
+*.dll
+*.pidb
+*.userprefs
+*.csproj.*
+*~
